@@ -1,16 +1,16 @@
 # Hi, I'm Gulnar Hasanova
 
-**Data analyst and machine-learning engineer in progress.**
-I build small, complete projects — and then measure them instead of claiming they work.
+**NLP & LLM engineer in progress.** I build local models and pipelines — and then
+measure them instead of claiming they work.
 
 Most of my repositories end with a report: a metric table, an error analysis, or a
 list of limitations. That is deliberate. A model that fails 40% of negated
 sentences is more useful to write down than a model that "works well".
 
 - 🔭 Currently: evaluating fine-tuned LLMs (QLoRA on Qwen2.5) and dataset quality for computer vision
-- 🧪 Interested in: evaluation, error analysis, retrieval, and anything that runs locally
-- 🌍 Based in Azerbaijan · writing code and reports in English, tutoring content in Azerbaijani
-- 📫 Reach me: **[your email]** · **[your LinkedIn]**
+- 🎯 Focus: evaluation, error analysis, retrieval and agentic systems that run locally
+- 🌍 Based in Azerbaijan · code and reports in English, tutoring content in Azerbaijani
+- 💬 Open to collaboration on local-first ML projects
 
 ---
 
@@ -18,9 +18,9 @@ sentences is more useful to write down than a model that "works well".
 
 | Project | What it does | Stack | Result |
 |---|---|---|---|
-| **[Data Collection Quality Ablation](https://github.com/HasanovaGulnar/data-collection-quality-ablation)** | Two YOLO detectors with identical architecture and hyperparameters — only the dataset changes (300 images / 4 sessions vs 800 / 15+ sessions) | Python, YOLOv8, OpenCV | Diversity beat size on a clip from conditions in neither training set |
-| **[Negation & Sarcasm Stress Test](https://github.com/HasanovaGulnar/negation-sarcasm-stress-test)** | 15 hand-written sentences that break sentiment models in specific, explainable ways | Python, scikit-learn, Transformers | TF-IDF 40% failure · BERT 46.7% · transformer fails every sarcasm case |
 | **[Base vs Fine-Tuned Panel](https://github.com/HasanovaGulnar/base-vs-finetuned-panel)** | One prompt, two variants of the same model, side-by-side answers with measured latency | Transformers, PEFT/QLoRA, Streamlit | Adapter: +0.17 s load, +10.4% latency; quality mixed, documented per prompt |
+| **[Negation & Sarcasm Stress Test](https://github.com/HasanovaGulnar/negation-sarcasm-stress-test)** | 15 hand-written sentences that break sentiment models in specific, explainable ways | Python, scikit-learn, Transformers | TF-IDF 40% failure · BERT 46.7% · transformer fails every sarcasm case |
+| **[Data Collection Quality Ablation](https://github.com/HasanovaGulnar/data-collection-quality-ablation)** | Two YOLO detectors with identical architecture and hyperparameters — only the dataset changes (300 images / 4 sessions vs 800 / 15+ sessions) | Python, YOLOv8, OpenCV | Diversity beat size on a clip from conditions in neither training set |
 | **[ReviewPulse](https://github.com/HasanovaGulnar/reviewpulse-ai-sentiment-analysis)** | Sentiment app for small sellers: one review or a CSV batch, with confidence and a batch summary | scikit-learn, Streamlit, pandas | Capstone — classical NLP delivered as a usable product |
 | **[Local Research Agent](https://github.com/HasanovaGulnar/research-agent)** | Plans, calls tools through Ollama's native tool API, and cites only evidence it actually retrieved | Python, Ollama, JSONL traces | Fake citations invalidate the run; every step is inspectable |
 | **[License Plate Recognition](https://github.com/HasanovaGulnar/plate-recognition)** | Detect → crop → OCR pipeline with an honest end-to-end evaluation | YOLOv8, Tesseract, OpenCV | mIoU 0.888 · recall 100% · exact match 15% (3/20) |
@@ -28,17 +28,6 @@ sentences is more useful to write down than a model that "works well".
 ---
 
 ## Projects by area
-
-### Computer vision
-
-**[Pen/Pencil Webcam Detector](https://github.com/HasanovaGulnar/pen-pencil-detector)** — fine-tuned YOLOv8n for one custom class, live webcam overlay with FPS.
-`Python` `Ultralytics YOLOv8` `OpenCV`
-
-**[CNNs & Image Classification](https://github.com/HasanovaGulnar/CNNs-and-Image-Classification)** — a CNN trained from scratch against an MLP, same seed and schedule, plus five hand-drawn digits as a reality check.
-`PyTorch` `CNN` `MNIST` — CNN 98.73% vs MLP 97.36%
-
-**[Object Detection & Tracking](https://github.com/HasanovaGulnar/CodeAlpha_ObjectDetectionTracking)** — webcam/video input, YOLOv8n detections, ByteTrack IDs.
-`Python` `YOLOv8` `ByteTrack` `OpenCV` — CodeAlpha AI internship, Task 4
 
 ### NLP & LLMs
 
@@ -51,11 +40,25 @@ sentences is more useful to write down than a model that "works well".
 **[Product Review Sentiment](https://github.com/HasanovaGulnar/product-review-sentiment)** — classical TF-IDF baseline vs a pretrained transformer on the same saved Yelp split.
 `scikit-learn` `BERT` `pandas` — identical reviews, labels and test set for both
 
+**[AI Ticket Bot](https://github.com/HasanovaGulnar/ai-customer-support-ticket-bot)** — Telegram support desk where a local LLM classifies tickets as JSON, with a confidence gate and a logged fallback path.
+`n8n` `Ollama` `Google Sheets` — see also the [rule-based version](https://github.com/HasanovaGulnar/customer-support-ticket-bot-n8n) it replaced
+
 **[FAQ Chatbot](https://github.com/HasanovaGulnar/CodeAlpha_FAQChatbot)** — TF-IDF + cosine similarity over a 12-question FAQ, with stemming and a fallback threshold.
 `NLTK` `scikit-learn` `Streamlit` — CodeAlpha AI internship, Task 2
 
 **[Language Translation Tool](https://github.com/HasanovaGulnar/CodeAlpha_LanguageTranslationTool)** — Streamlit translator with input, size and language validation.
 `Streamlit` `REST API` — CodeAlpha AI internship, Task 1
+
+### Computer vision
+
+**[Pen/Pencil Webcam Detector](https://github.com/HasanovaGulnar/pen-pencil-detector)** — fine-tuned YOLOv8n for one custom class, live webcam overlay with FPS.
+`Python` `Ultralytics YOLOv8` `OpenCV`
+
+**[CNNs & Image Classification](https://github.com/HasanovaGulnar/CNNs-and-Image-Classification)** — a CNN trained from scratch against an MLP, same seed and schedule, plus five hand-drawn digits as a reality check.
+`PyTorch` `CNN` `MNIST` — CNN 98.73% vs MLP 97.36%
+
+**[Object Detection & Tracking](https://github.com/HasanovaGulnar/CodeAlpha_ObjectDetectionTracking)** — webcam/video input, YOLOv8n detections, ByteTrack IDs.
+`Python` `YOLOv8` `ByteTrack` `OpenCV` — CodeAlpha AI internship, Task 4
 
 **[Music Generation](https://github.com/HasanovaGulnar/CodeAlpha_MusicGeneration)** — LSTM/Transformer MIDI generation with audio rendering.
 `PyTorch` `MIDI` `SoundFont` — CodeAlpha AI internship
@@ -73,14 +76,6 @@ sentences is more useful to write down than a model that "works well".
 
 **[EDA & Data Visualization](https://github.com/HasanovaGulnar/EDA-Data-Visualization)** — reusable exploratory workflow: missing values, outliers, correlations, hypotheses.
 `pandas` `NumPy` `Matplotlib` `Seaborn` `SciPy`
-
-### Automation
-
-**[AI Customer Support Ticket Bot](https://github.com/HasanovaGulnar/ai-customer-support-ticket-bot)** — n8n workflow that classifies tickets with an AI node and logs them to Google Sheets.
-`n8n` `AI agent` `Google Sheets`
-
-**[Telegram Support Bot](https://github.com/HasanovaGulnar/customer-support-ticket-bot-n8n)** — n8n workflow that turns Telegram messages into support tickets.
-`n8n` `Telegram` `Automation`
 
 ---
 
@@ -105,11 +100,12 @@ sentences is more useful to write down than a model that "works well".
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 
 ---
 
-## Programs
+## Background
 
 - **CodeAlpha AI internship** — four tasks: translation tool, FAQ chatbot, object detection & tracking, music generation
 - **Code Academy — Data Analytics** — R retail-sales analysis and reporting
-- **Course projects** — weekly builds in computer vision, NLP, RAG and agentic systems, each closed with an evaluation report
+- **Self-directed projects** — weekly builds in NLP, computer vision, RAG and agentic systems, each closed with an evaluation report
