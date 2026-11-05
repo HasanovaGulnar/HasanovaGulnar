@@ -1,14 +1,20 @@
 # Hi, I'm Gulnar Hasanova
 
-**NLP & LLM engineer in progress.** I build local models and pipelines — and then
-measure them instead of claiming they work.
+**I'm an aspiring AI Engineer, Data Scientist and Data Analyst** who has worked on
+several datasets and projects — and who measures the results instead of assuming
+they work.
 
 Most of my repositories end with a report: a metric table, an error analysis, or a
 list of limitations. That is deliberate. A model that fails 40% of negated
 sentences is more useful to write down than a model that "works well".
 
+**What I work on**
+
+- **AI engineering** — LLMs, QLoRA fine-tuning, agents, retrieval, computer vision
+- **Data science** — modelling, evaluation design and error analysis
+- **Data analytics** — R, SQL, exploratory analysis, statistics and reporting
+
 - 🔭 Currently: evaluating fine-tuned LLMs (QLoRA on Qwen2.5) and dataset quality for computer vision
-- 🎯 Focus: evaluation, error analysis, retrieval and agentic systems that run locally
 - 🌍 Based in Azerbaijan · code and reports in English, tutoring content in Azerbaijani
 - 💬 Open to collaboration on local-first ML projects
 
