@@ -1,12 +1,10 @@
 # Hi, I'm Gulnar Hasanova
 
-**I'm an aspiring AI Engineer, Data Scientist and Data Analyst** who has worked on
-several datasets and projects — and who measures the results instead of assuming
-they work.
+**AI Engineer & Data Analyst — every project ships with its numbers.**
 
-Most of my repositories end with a report: a metric table, an error analysis, or a
-list of limitations. That is deliberate. A model that fails 40% of negated
-sentences is more useful to write down than a model that "works well".
+I build local AI systems, train and evaluate models, and analyse datasets in
+Python and R. Then I write down what the results actually show: a metric table,
+an error analysis, or the limitations of the run.
 
 **What I work on**
 
